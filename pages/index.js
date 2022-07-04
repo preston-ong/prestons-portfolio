@@ -19,14 +19,17 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          Preston is a third-year Computer Science undergraduate student at
+          Monash University Malaysia specialising in Artificial intelligence
+          (AI). He resides in the Software Engineering and Product Management
+          realm atop his personal projects and internship experiences in the
+          industries of e-commerce, EdTech and tele-health.{" "}
         </p>
+        <p>Drop me a message if you are keen to chat!</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
