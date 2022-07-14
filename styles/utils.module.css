@@ -50,3 +50,27 @@
 .lightText {
   color: #666;
 }
+
+.marginRight8px {
+  margin-right: 8px;
+}
+
+.displayInlineBlock {
+  display: inline-block;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+.justifyContentCenter {
+  justify-content: center;
+}
+
+.textCenter {
+  text-align: center;
+}
