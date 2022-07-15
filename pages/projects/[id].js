@@ -52,7 +52,7 @@ export default function Project({ projectData }) {
         <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
 
         <h3>Screenshots</h3>
-        <Carousel />
+        <Carousel img_dir={`/images/${projectData.id}`} images={projectData.images} />
       </article>
     </Layout>
   );
