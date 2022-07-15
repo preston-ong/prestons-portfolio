@@ -7,6 +7,7 @@ import utilStyles from "../../styles/utils.module.css";
 import Carousel from "../../components/Carousel";
 
 import { getAllProjectIds, getProjectData } from "../../lib/projects";
+import { secondsToMinutes } from "date-fns";
 
 export async function getStaticProps({ params }) {
   const projectData = await getProjectData(params.id);
@@ -41,18 +42,31 @@ export default function Project({ projectData }) {
           Updated at <Date dateString={projectData.date} />
         </div>
         <div>
-          <a href={projectData.live_demo_url} target="_blank">
-            Live Demo
-          </a>
-          <span> | </span>
-          <a href={projectData.video_walkthrough_url} target="_blank">
-            Video Walkthrough
-          </a>
+          {projectData.live_demo_url && (
+            <span>
+              <a href={projectData.live_demo_url} target="_blank">
+                Live Demo
+              </a>
+              <span> | </span>
+            </span>
+          )}
+          {projectData.video_walkthrough_url && (
+            <a href={projectData.video_walkthrough_url} target="_blank">
+              Video Walkthrough
+            </a>
+          )}
         </div>
         <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
 
-        <h3>Screenshots</h3>
-        <Carousel img_dir={`/images/${projectData.id}`} images={projectData.images} />
+        {projectData.images && (
+          <section>
+            <h3>Screenshots</h3>
+            <Carousel
+              img_dir={`/images/${projectData.id}`}
+              images={projectData.images}
+            />
+          </section>
+        )}
       </article>
     </Layout>
   );
