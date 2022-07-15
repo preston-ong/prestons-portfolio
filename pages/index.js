@@ -26,7 +26,7 @@ export default function Home() {
           realm atop his personal projects and internship experiences in the
           industries of e-commerce, EdTech and tele-health.{" "}
         </p>
-        <p>Drop me a message if you are keen to chat!</p>
+        <p>Drop a message if you are keen to chat!</p>
       </section>
       <section
         className={utilStyles.textCenter}
@@ -35,12 +35,15 @@ export default function Home() {
         <Link href="/projects">
           <a className={utilStyles.marginRight8px}>Projects</a>
         </Link>
-        <Link href="/blog">Blog</Link>
       </section>
 
       <section className={utilStyles.textCenter}>
         <a
-          style={{ color: "black", marginRight: "8px", display: "inline-block" }}
+          style={{
+            color: "black",
+            marginRight: "8px",
+            display: "inline-block",
+          }}
           href="https://github.com/prestonojb"
           target="_blank"
         >
@@ -50,7 +53,11 @@ export default function Home() {
           />
         </a>
         <a
-          style={{ color: "black", marginRight: "8px", display: "inline-block" }}
+          style={{
+            color: "black",
+            marginRight: "8px",
+            display: "inline-block",
+          }}
           href="https://twitter.com/preston_ojb"
           target="_blank"
         >
