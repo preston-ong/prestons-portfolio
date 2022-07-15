@@ -40,7 +40,7 @@ export default function Home() {
 
       <section className={utilStyles.textCenter}>
         <a
-          style={{ color: "black", marginRight: "8px" }}
+          style={{ color: "black", marginRight: "8px", display: "inline-block" }}
           href="https://github.com/prestonojb"
           target="_blank"
         >
@@ -50,7 +50,7 @@ export default function Home() {
           />
         </a>
         <a
-          style={{ color: "black", marginRight: "8px" }}
+          style={{ color: "black", marginRight: "8px", display: "inline-block" }}
           href="https://twitter.com/preston_ojb"
           target="_blank"
         >
@@ -60,7 +60,7 @@ export default function Home() {
           />
         </a>
         <a
-          style={{ color: "black" }}
+          style={{ color: "black", display: "inline-block" }}
           href="https://linkedin.com/in/preston-ong-jin-bin"
           target="_blank"
         >
