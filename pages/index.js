@@ -5,12 +5,7 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faTwitter,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import SocialLink from "../components/SocialLink";
 
 export default function Home() {
   return (
@@ -18,64 +13,49 @@ export default function Home() {
       <Head>
         <title>{`Preston's Website`}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section className="text-justify">
         <p>
-          Preston is a third-year Computer Science undergraduate student at
-          Monash University Malaysia specialising in Artificial intelligence
-          (AI). He resides in the Software Engineering and Product Management
-          realm atop his personal projects and internship experiences in the
-          industries of e-commerce, EdTech and tele-health.{" "}
+          Hey there 👋 I am a final-year Computer Science student (graduating
+          Nov 2022) at Monash University based in Kuala Lumpur 🇲🇾. Previously, I
+          was a software engineering intern at{" "}
+          <a target="_blank" href="https://dropee.com">
+            Dropee
+          </a>
+          , a full-stack engineer at{" "}
+          <a target="_blank" hrerf="https://boardedu.org">
+            Board Education
+          </a>{" "}
+          and the founding software engineer at{" "}
+          <a target="_blank" hrerf="https://carepool.asia">
+            Carepool Asia
+          </a>
+          .
         </p>
-        <p>Drop a message if you are keen to chat!</p>
-      </section>
-      <section
-        className={utilStyles.textCenter}
-        style={{ marginBottom: "8px" }}
-      >
-        <Link href="/projects">
-          <a className={utilStyles.marginRight8px}>Projects</a>
-        </Link>
+        <p>
+          An aspiring front-end engineer passionate about deliver quality code
+          and amazing user experience, seeking to blend Product Management into
+          my responsbilities as an engineer too!
+        </p>
+        <p>
+          At the side, I volunteered as the Strategic Lead of{" "}
+          <a target="_blank" href="https://projected.my">
+            ProjectEd Malaysia
+          </a>
+          . A huge{" "}
+          <a target="_blank" href="https://twitter.com/warriors">
+            Golden State Warriors 🏀
+          </a>{" "}
+          fan too!
+        </p>
+        <p>Drop me a message on Twitter or LinkedIn for a coffee chat!</p>
       </section>
 
-      <section className={utilStyles.textCenter}>
-        <a
-          style={{
-            color: "black",
-            marginRight: "8px",
-            display: "inline-block",
-          }}
-          href="https://github.com/prestonojb"
-          target="_blank"
-        >
-          <FontAwesomeIcon
-            icon={faGithub}
-            style={{ width: "24px", height: "24px" }}
-          />
-        </a>
-        <a
-          style={{
-            color: "black",
-            marginRight: "8px",
-            display: "inline-block",
-          }}
-          href="https://twitter.com/preston_ojb"
-          target="_blank"
-        >
-          <FontAwesomeIcon
-            icon={faTwitter}
-            style={{ width: "24px", height: "24px" }}
-          />
-        </a>
-        <a
-          style={{ color: "black", display: "inline-block" }}
-          href="https://linkedin.com/in/preston-ong-jin-bin"
-          target="_blank"
-        >
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            style={{ width: "24px", height: "24px" }}
-          />
-        </a>
+      <section className="text-center mr-2 mb-5">
+        <Link href="/projects">
+          <a className="inline-block bg-blue-700 text-white text-xl hover:bg-blue-800 hover:no-underline rounded-xl px-3 py-2">
+            Check out my Projects 👉
+          </a>
+        </Link>
       </section>
     </Layout>
   );

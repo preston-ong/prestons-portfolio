@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
+import SocialLink from "./SocialLink";
 
 const name = "Preston Ong";
 export const siteTitle = "Preston Ong's Personal Website";
@@ -27,18 +28,38 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className={`${styles.header} mb-4`}>
         {home ? (
           <>
             <Image
               priority
               src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
+              className="rounded-full !border-blue-700 !border-4 !border-solid !p-1"
               height={144}
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={`${utilStyles.heading2Xl} !mt-2 !mb-1`}>{name}</h1>
+            <section className="text-center">
+              <SocialLink
+                width="18px"
+                height="18px"
+                type="github"
+                url="https://github.com/prestonojb"
+              />
+              <SocialLink
+                width="18px"
+                height="18px"
+                type="twitter"
+                url="https://twitter.com/preston_ojb"
+              />
+              <SocialLink
+                width="18px"
+                height="18px"
+                type="linkedin"
+                url="https://linkedin.com/in/preston-ong-jin-bin"
+              />
+            </section>
           </>
         ) : (
           <>
@@ -47,18 +68,38 @@ export default function Layout({ children, home }) {
                 <Image
                   priority
                   src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
+                  className="rounded-full !border-blue-700 !border-4 !border-solid !p-1"
                   height={108}
                   width={108}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className={`${utilStyles.headingLg} !mt-2 !mb-1`}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
+            <section className="text-center">
+              <SocialLink
+                width="18px"
+                height="18px"
+                type="github"
+                url="https://github.com/prestonojb"
+              />
+              <SocialLink
+                width="18px"
+                height="18px"
+                type="twitter"
+                url="https://twitter.com/preston_ojb"
+              />
+              <SocialLink
+                width="18px"
+                height="18px"
+                type="linkedin"
+                url="https://linkedin.com/in/preston-ong-jin-bin"
+              />
+            </section>
           </>
         )}
       </header>

@@ -10,6 +10,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 16px;
+  @apply bg-stone-50 text-slate-800;
 }
 
 * {
@@ -17,8 +18,9 @@ body {
 }
 
 a {
-  color: #0070f3;
+  @apply text-blue-700;
   text-decoration: none;
+  font-size: inherit;
 }
 
 a:hover {
@@ -60,7 +62,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .swiper {
