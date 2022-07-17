@@ -1,7 +1,9 @@
 ---
 title: "JIRA Clone"
 description: "React-based JIRA clone"
-cover_img_url: "cover.png"
+cover_img_url: "1.png"
+images: "2.png|3.png|4.png"
+source_code_url: "https://github.com/prestonojb/jira_clone"
 date: "2022-07-15"
 ---
 

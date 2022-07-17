@@ -1,8 +1,8 @@
 ---
 title: "Learning Management System (LMS)"
 description: "Tuition Centre Portal for tutors, students and parents"
-cover_img_url: "cover.png"
-images: "class.png|lesson.png|report.png|report_pdf.png|calendar.png"
+cover_img_url: "1.png"
+images: "2.png|3.png|4.png|5.png|6.png"
 date: "2022-07-15"
 video_walkthrough_url: "https://www.loom.com/share/f4b2fbd1b37446d4a98637c1f1b19fbb"
 ---

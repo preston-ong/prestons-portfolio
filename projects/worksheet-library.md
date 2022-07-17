@@ -1,8 +1,8 @@
 ---
 title: "Worksheet Library"
 description: "One-stop for revision notes and papers"
-cover_img_url: "past_paper_index.png"
-images: "past_paper.png|guide.png|library.png"
+cover_img_url: "1.png"
+images: "2.png|3.png|4.png|5.png"
 date: "2022-07-15"
 live_demo_url: "https://boardedu.org/igcse/past-papers/subjects/8"
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Telehealth Platform"
 description: "Digital health platform offering multi-disciplinary telehealth consultations for families and businesses"
-cover_img_url: "cover.png"
-images: "appointment.png|appointment_2.png|availability.png|prescription.png"
+cover_img_url: "1.png"
+images: "2.png|3.png|4.png|5.png"
 date: "2022-07-15"
 ---
 

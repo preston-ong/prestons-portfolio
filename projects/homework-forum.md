@@ -1,8 +1,8 @@
 ---
 title: "Homework Forum"
 description: "Homework forum connecting high-school students with mentors"
-cover_img_url: "cover.png"
-images: "ask.png|answer.png|profile.png"
+cover_img_url: "1.png"
+images: "2.png|3.png|4.png|5.png|6.png|7.png"
 date: "2022-07-15"
 live_demo_url: "http://boardedu.org/spm"
 video_walkthrough_url: "https://www.loom.com/share/c89803450c9c4241807976ec52d9b26a"

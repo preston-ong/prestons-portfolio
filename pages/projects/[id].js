@@ -32,7 +32,7 @@ export default function Project({ projectData }) {
       <Head>
         <title>{projectData.title}</title>
       </Head>
-      <article>
+      <article className="text-justify">
         <img
           src={`/images/${projectData.id}/${projectData.cover_img_url}`}
           class="w-full h-full object-center object-cover"
@@ -47,7 +47,13 @@ export default function Project({ projectData }) {
               <a href={projectData.live_demo_url} target="_blank">
                 Live Demo
               </a>
-              <span> | </span>
+            </span>
+          )}
+          {projectData.source_code_url && (
+            <span>
+              <a href={projectData.source_code_url} target="_blank">
+                Source Code
+              </a>
             </span>
           )}
           {projectData.video_walkthrough_url && (
@@ -60,7 +66,7 @@ export default function Project({ projectData }) {
 
         {projectData.images && (
           <section>
-            <h3>Screenshots</h3>
+            <h3>UI/UX</h3>
             <Carousel
               img_dir={`/images/${projectData.id}`}
               images={projectData.images}

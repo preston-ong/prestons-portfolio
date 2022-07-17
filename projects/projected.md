@@ -1,7 +1,8 @@
 ---
 title: "ProjectEd Website"
 description: "Non-profit organisation tackling education inequality in Malaysia"
-cover_img_url: "cover.png"
+cover_img_url: "1.png"
+images: "2.png|3.png"
 date: "2022-07-15"
 live_demo_url: "https://projected.my"
 ---
