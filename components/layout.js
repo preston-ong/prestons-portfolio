@@ -6,6 +6,7 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import SocialLink from "./SocialLink";
+import Breadcrumbs from "./Breadcrumbs";
 
 const name = "Preston Ong";
 export const siteTitle = "Preston Ong's Personal Website";
@@ -75,11 +76,10 @@ export default function Layout({ children, home }) {
                 />
               </a>
             </Link>
-            <h2 className={`${utilStyles.headingLg} !mt-2 !mb-1`}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
+            <div className="text-center mt-4">
+              <Breadcrumbs />
+            </div>
+            <h2 className={`${utilStyles.headingLg} !mt-1 !mb-1`}>{name}</h2>
             <section className="text-center">
               <SocialLink
                 width="18px"

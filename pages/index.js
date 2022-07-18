@@ -1,11 +1,9 @@
 import React from "react";
 
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+import Layout from "../components/layout";
 
 import Link from "next/link";
-import SocialLink from "../components/SocialLink";
 
 export default function Home() {
   return (
@@ -22,11 +20,11 @@ export default function Home() {
             Dropee
           </a>
           , a full-stack engineer at{" "}
-          <a target="_blank" hrerf="https://boardedu.org">
+          <a target="_blank" href="https://boardedu.org">
             Board Education
           </a>{" "}
           and the founding software engineer at{" "}
-          <a target="_blank" hrerf="https://carepool.asia">
+          <a target="_blank" href="https://carepool.asia">
             Carepool Asia
           </a>
           .
