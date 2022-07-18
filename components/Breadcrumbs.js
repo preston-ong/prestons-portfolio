@@ -55,7 +55,7 @@ function Crumb({ text, href, last = false }) {
   return (
     <>
       <Link href={href}>{text}</Link>
-      <span class="mx-1">/</span>
+      <span className="mx-1">/</span>
     </>
   );
 }

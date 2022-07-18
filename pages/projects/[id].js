@@ -7,7 +7,6 @@ import utilStyles from "../../styles/utils.module.css";
 import Carousel from "../../components/Carousel";
 
 import { getAllProjectIds, getProjectData } from "../../lib/projects";
-import { secondsToMinutes } from "date-fns";
 
 export async function getStaticProps({ params }) {
   const projectData = await getProjectData(params.id);
@@ -27,6 +26,30 @@ export async function getStaticPaths() {
 }
 
 export default function Project({ projectData }) {
+  function generateProjectLinks() {
+    const links = {
+      "Live Demo": projectData.live_demo_url,
+      "Source Code": projectData.source_code_url,
+      "Video Walkthrough": projectData.video_walkthrough_url,
+    };
+
+    return Object.keys(links)
+      .filter(
+        (key) =>
+          typeof links[key] !== "undefined" && typeof links[key] !== null,
+      )
+      .map((key, idx, arr) => {
+        return (
+          <>
+            <a key={idx} href={links[key]}>
+              {key}
+            </a>
+            {idx + 1 !== arr.length && <span> | </span>}
+          </>
+        );
+      });
+  }
+
   return (
     <Layout>
       <Head>
@@ -41,27 +64,7 @@ export default function Project({ projectData }) {
         <div className={utilStyles.lightText}>
           Updated at <Date dateString={projectData.date} />
         </div>
-        <div>
-          {projectData.live_demo_url && (
-            <span>
-              <a href={projectData.live_demo_url} target="_blank">
-                Live Demo
-              </a>
-            </span>
-          )}
-          {projectData.source_code_url && (
-            <span>
-              <a href={projectData.source_code_url} target="_blank">
-                Source Code
-              </a>
-            </span>
-          )}
-          {projectData.video_walkthrough_url && (
-            <a href={projectData.video_walkthrough_url} target="_blank">
-              Video Walkthrough
-            </a>
-          )}
-        </div>
+        <div>{generateProjectLinks()}</div>
         <div dangerouslySetInnerHTML={{ __html: projectData.contentHtml }} />
 
         {projectData.images && (
