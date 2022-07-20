@@ -41,7 +41,7 @@ export default function Project({ projectData }) {
       .map((key, idx, arr) => {
         return (
           <>
-            <a key={idx} href={links[key]}>
+            <a key={idx} href={links[key]} target="_blank">
               {key}
             </a>
             {idx + 1 !== arr.length && <span> | </span>}
