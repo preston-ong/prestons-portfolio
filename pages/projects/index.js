@@ -44,7 +44,7 @@ export default function Projects({ projectsData }) {
           <Link href={`/projects/homework-forum`}>Homework Forum</Link>,{" "}
           <Link href={`/projects/worksheet-library`}>Worksheet Library</Link>{" "}
           and{" "}
-          <Link href={`/projects/worksheet-generator`}>
+          <Link href={`/projects/exam-builder`}>
             Worksheet Generator
           </Link>
           .
