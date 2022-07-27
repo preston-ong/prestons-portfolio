@@ -30,27 +30,37 @@ export default function Home() {
           .
         </p>
         <p>
-          An aspiring front-end engineer passionate about deliver quality code
-          and amazing user experience, seeking to blend Product Management into
-          my responsbilities as an engineer too!
+         I am a software engineer passionate about solving real-world problems with
+          technology, seeking to blend Product Management into my
+          responsbilities as an engineer too!
         </p>
         <p>
-          At the side, I volunteered as the Strategic Lead of{" "}
+          At the side, I also volunteered as the Strategic Lead of{" "}
           <a target="_blank" href="https://projected.my">
             ProjectEd Malaysia
           </a>
-          . A huge{" "}
-          <a target="_blank" href="https://twitter.com/warriors">
-            Golden State Warriors 🏀
-          </a>{" "}
-          fan too!
+          . I am a huge Warriors fan 🏀 as well!
         </p>
-        <p>Drop me a message on Twitter or LinkedIn for a coffee chat!</p>
+        <p>
+          Drop me a message on{" "}
+          <a target="_blank" href="https://twitter.com/preston_ojb">
+            Twitter
+          </a>{" "}
+          or{" "}
+          <a target="_blank" href="https://linkedin.com/in/preston-ong-jin-bin">
+            LinkedIn
+          </a>{" "}
+          for a chat!
+        </p>
       </section>
 
       <section className="text-center mr-2 mb-5">
         <Link href="/projects">
-          <a className="inline-block bg-blue-700 text-white text-xl hover:bg-blue-800 hover:no-underline rounded-xl px-3 py-2">
+          <a
+            className="text-lg text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 
+                font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center 
+                dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-300 hover:no-underline"
+          >
             Check out my Projects 👉
           </a>
         </Link>

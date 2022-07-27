@@ -5,6 +5,7 @@ cover_img_url: "1.png"
 images: "2.png|3.png|4.png|5.png"
 date: "2022-07-15"
 live_demo_url: "https://boardedu.org/igcse/past-papers/subjects/8"
+hidden: 1
 ---
 
 ### Summary

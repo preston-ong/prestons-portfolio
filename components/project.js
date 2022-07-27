@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
 
 export default function Project({ project }) {
-  console.log(project.cover_img_url);
   return (
     <a href={`/projects/${project.id}`} class="group">
       <div class="w-full aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">

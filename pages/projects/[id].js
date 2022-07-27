@@ -2,6 +2,7 @@ import React from "react";
 
 import Layout from "../../components/layout";
 import Head from "next/head";
+import Link from "next/link";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
 import Carousel from "../../components/Carousel";
@@ -55,6 +56,9 @@ export default function Project({ projectData }) {
       <Head>
         <title>{projectData.title}</title>
       </Head>
+      <nav className="mb-4">
+        <Link href="/projects">← Back to Projects</Link>
+      </nav>
       <article className="text-justify">
         <img
           src={`/images/${projectData.id}/${projectData.cover_img_url}`}
@@ -77,6 +81,9 @@ export default function Project({ projectData }) {
           </section>
         )}
       </article>
+      <nav className="mt-4">
+        <Link href="/projects">← Back to Projects</Link>
+      </nav>
     </Layout>
   );
 }
