@@ -13,9 +13,8 @@ export default function Home() {
       </Head>
       <section className="text-justify">
         <p>
-          Hey there 👋 I am a final-year Computer Science student (graduating
-          Nov 2022) at Monash University based in Kuala Lumpur 🇲🇾. Previously, I
-          was a software engineering intern at{" "}
+          Hey there 👋  I am a Software Engineer at Beam Mobility (currently based in Kuala Lumpur 🇲🇾). 
+          Previously, I was a software engineering intern at{" "}
           <a target="_blank" href="https://dropee.com">
             Dropee
           </a>
@@ -27,19 +26,7 @@ export default function Home() {
           <a target="_blank" href="https://carepool.asia">
             Carepool Asia
           </a>
-          .
-        </p>
-        <p>
-         I am a software engineer passionate about solving real-world problems with
-          technology, seeking to blend Product Management into my
-          responsbilities as an engineer too!
-        </p>
-        <p>
-          At the side, I also volunteered as the Strategic Lead of{" "}
-          <a target="_blank" href="https://projected.my">
-            ProjectEd Malaysia
-          </a>
-          . I am a huge Warriors fan 🏀 as well!
+          . I studied Computer Science at <a href="https://www.monash.edu.my/">Monash University Malaysia</a>.
         </p>
         <p>
           Drop me a message on{" "}
@@ -50,7 +37,8 @@ export default function Home() {
           <a target="_blank" href="https://linkedin.com/in/preston-ong-jin-bin">
             LinkedIn
           </a>{" "}
-          for a chat!
+          for a chat on anything from distributed systems, Leetcode, startups and everything else you think I
+          might be interested in!
         </p>
       </section>
 
