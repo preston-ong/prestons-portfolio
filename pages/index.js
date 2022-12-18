@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       <section className="text-center mr-2 mb-5">
-        <Link href="/projects">
+        <Link href="/projects" legacyBehavior>
           <a
             className="text-lg text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 
                 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center 

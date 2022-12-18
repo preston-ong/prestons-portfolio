@@ -64,7 +64,7 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <a>
                 <Image
                   priority
