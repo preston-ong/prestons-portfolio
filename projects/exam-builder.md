@@ -4,7 +4,7 @@ description: "Worksheet generator tool for high-school students"
 cover_img_url: "1.png"
 images: "2.png|3.png|4.png"
 date: "2022-07-15"
-live_demo_url: "http://boardedu.org/exam-builder"
+# live_demo_url: "http://boardedu.org/exam-builder"
 video_walkthrough_url: "https://www.loom.com/share/e1ab24281295475e94176ea8a805bdbc"
 hidden: 1
 ---
