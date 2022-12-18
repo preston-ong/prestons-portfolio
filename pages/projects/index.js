@@ -28,26 +28,16 @@ export default function Projects({ projectsData }) {
         <Link href="/">← Back to Home</Link>
       </nav>
       <section className="mb-10 text-justify">
-        <h2 className={utilStyles.headingXl}>tldr;</h2>
+        <h2 className={utilStyles.headingXl}>Highlights</h2>
         <p>
-          If you are curious about my technical skills but do not want to
-          navigate through a long list of projects, check out{" "}
-          <a
-            className="bg-yellow-200"
-            target="_blank"
-            href="https://boardedu.org"
-          >
+          Check out{" "}
+          <a className="bg-yellow-200" href="#">
             Board
           </a>
-          . I built the website from scratch using Javascript/jQuery and
-          Laravel, which includes features like{" "}
-          <Link href={`/projects/homework-forum`}>Homework Forum</Link>,{" "}
-          <Link href={`/projects/worksheet-library`}>Worksheet Library</Link>{" "}
-          and{" "}
-          <Link href={`/projects/exam-builder`}>
-            Worksheet Generator
-          </Link>
-          .
+          . I built the website from scratch using Javascript/jQuery and Laravel, which includes
+          features like <Link href={`/projects/homework-forum`}>Homework Forum</Link>,{" "}
+          <Link href={`/projects/worksheet-library`}>Worksheet Library</Link> and{" "}
+          <Link href={`/projects/exam-builder`}>Worksheet Generator</Link>.
         </p>
       </section>
 
