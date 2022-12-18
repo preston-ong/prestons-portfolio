@@ -73,7 +73,7 @@ export default function Project({ projectData }) {
 
         {projectData.images && (
           <section>
-            <h3>UI/UX</h3>
+            <h3>References</h3>
             <Carousel
               img_dir={`/images/${projectData.id}`}
               images={projectData.images}
