@@ -13,10 +13,11 @@ export default function Home() {
       </Head>
       <section className="text-justify">
         <p>
-          Hey there 👋  I am a Software Engineer at Beam Mobility (currently based in Kuala Lumpur 🇲🇾). 
-          Previously, I was a software engineering intern at{" "}
-          <a target="_blank" href="https://dropee.com">
-            Dropee
+          Hey there 👋 I am a Software Engineer at Trontal, working on backend engineering in the quantitative finance field.
+          My work spans components such as order books, options indicators, and data validation.
+          Previously, I was a Software Engineer at{" "}
+          <a target="_blank" href="https://www.ridebeam.com/">
+            Beam Mobility
           </a>
           , a full-stack engineer at{" "}
           <a target="_blank" href="https://boardedu.org">
@@ -37,7 +38,7 @@ export default function Home() {
           <a target="_blank" href="https://linkedin.com/in/preston-ong-jin-bin">
             LinkedIn
           </a>{" "}
-          for a chat on anything from distributed systems, Leetcode, startups and everything else you think I
+          for a chat on anything from distributed systems, databases and everything else you think I
           might be interested in!
         </p>
       </section>
